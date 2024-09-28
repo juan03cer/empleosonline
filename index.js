@@ -80,10 +80,10 @@ app.use((error, req, res,next) => {
 
 // dejar que heroku asigne el puerto
 const host = '0.0.0.0';
-const port = process.env.PORT;
+const port = process.env.PORT || 3000; // Usa 3000 como puerto predeterminado
 
-app.listen(port,host,() =>{
-    console.log('el servidor esra funcionando')
+app.listen(port, host, () => {
+    console.log(`El servidor está funcionando en el puerto ${port}`);
 });
 
 // app.listen(process.env.PUERTO); // para local
