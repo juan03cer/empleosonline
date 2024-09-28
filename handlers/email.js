@@ -5,7 +5,7 @@ const util = require('util');
 // Crear el transporte de nodemailer
 let transport = nodemailer.createTransport({
     host: emailConfig.host,
-    port: emailConfig.port,
+    port: emailConfig.portemail,
     auth: {
         user: emailConfig.user,
         pass: emailConfig.pass

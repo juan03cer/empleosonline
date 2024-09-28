@@ -13,7 +13,7 @@ const flash = require('connect-flash')
 const createError =require('http-errors');
 const passport =require('./config/passport');
 const { console } = require('inspector');
-const { port } = require('./config/email');
+const { portemail } = require('./config/email');
 
 require('dotenv').config({ path: 'variables.env'});
 
